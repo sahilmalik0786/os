@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .window {
+    /* @apply  absolute bg-gray-800 rounded-md shadow-xl overflow-hidden w-[300px] h-[200px] ; */
+    /* padding: 1rem; */
+    min-width: 500px;
+    min-height: 400px;
+    position: absolute;
+    background-color: rgb(37, 36, 36);
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px  solid white; */
+    overflow: hidden;
+  }
+  .window-header {
+    /* @apply bg-gray-700 px-3 py-2 flex justify-between items-center cursor-pointer; */
+    background-color: gray;
+    color:black;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .window-content {
+    /* @apply p-3 h-full overflow-auto; */
+    height: 100%;
+    padding: 0.8em;
+    overflow: auto;
+  }
+}

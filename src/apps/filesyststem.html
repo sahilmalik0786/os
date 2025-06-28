@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual File System</title>
+    <style>
+       
+        .file-system { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+        .file-item, .folder-item { margin-left: 20px; cursor: pointer; }
+        .folder-item { font-weight: bold; }
+        .controls { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Virtual File System</h1>
+    
+    <div class="controls">
+        <input type="text" id="newItemName" class="text-black " placeholder="File/folder name">
+        <button id="createFile" class="p-1 bg-white rounded text-black">Create File</button>
+        <button id="createFolder" class="p-1 bg-white rounded text-black">Create Folder</button>
+        <button id="deleteItem" class="p-1 bg-white rounded text-black">Delete</button>
+    </div>
+    
+    <div id="fileSystem" class="file-system text-white"></div>
+    
+    <script src="filesystem.js"></script>
+</body>
+</html>
